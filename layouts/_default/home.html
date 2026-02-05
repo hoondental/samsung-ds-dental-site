@@ -1,0 +1,24 @@
+{{ define "main" }}
+  <section class="hero" style="background-image:url('/images/hero.jpg')">
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+      <div class="hero-kicker">{{ .Site.Params.clinic_name }}</div>
+      <h1 class="hero-title">홈페이지</h1>
+      <p class="hero-tagline">Hugo가 정상적으로 실행 중입니다. 상단 메뉴에서 진료 항목을 선택해 보세요.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">진료 메뉴</h2>
+      <div class="grid">
+        {{ range .Site.Menus.main }}
+          <a class="card" href="{{ .URL }}">
+            <div class="card-title">{{ .Name }}</div>
+            <div class="card-desc">{{ .URL }}</div>
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

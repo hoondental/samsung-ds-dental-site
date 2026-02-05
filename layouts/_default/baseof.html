@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+  {{ partial "header.html" . }}
+  {{ partial "quickmenu.html" . }}
+
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+  <script>
+    // Scroll to top
+    document.addEventListener('click', (e) => {
+      const t = e.target.closest('[data-scroll-top]');
+      if (t) window.scrollTo({top:0, behavior:'smooth'});
+    });
+  </script>
+</body>
+</html>
+

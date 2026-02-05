@@ -1,3 +1,46 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://samsung-ds-dental.com/"
+languageCode = "ko-kr"
+title = "Seoul Samsung DS Dental"
+enableRobotsTXT = true
+
+[params]
+  clinic_name = "서울삼성DS치과"
+  phone = "02-0000-0000"
+  naver_booking_url = "https://booking.naver.com/"  # 나중에 실제 예약 링크로 교체
+  naver_blog_url = "https://blog.naver.com/"        # 나중에 실제 블로그로 교체
+
+[menu]
+  [[menu.main]]
+    name = "치과소개"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    name = "보존치료"
+    url = "/conservative/"
+    weight = 20
+  [[menu.main]]
+    name = "보철치료"
+    url = "/prosthetic/"
+    weight = 30
+  [[menu.main]]
+    name = "임플란트"
+    url = "/implant/"
+    weight = 40
+  [[menu.main]]
+    name = "심미치료"
+    url = "/aesthetic/"
+    weight = 50  
+  [[menu.main]]
+    name = "수면치료"
+    url = "/sleep/"
+    weight = 60
+  [[menu.main]]
+    name = "치아교정"
+    url = "/orthodontic/"
+    weight = 70
+  [[menu.main]]
+    name = "커뮤니티"
+    url = "/community/"
+    weight = 80
+
+
