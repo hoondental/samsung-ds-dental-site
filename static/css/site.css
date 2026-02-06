@@ -86,3 +86,78 @@ a{text-decoration:none;color:inherit}
 @media (max-width: 640px){.grid{grid-template-columns:1fr;}}
 }
 
+/* 페이지 전환 효과 */
+html {
+  scroll-behavior: smooth; /* 같은 페이지 내 앵커 이동도 부드럽게 */
+}
+
+body {
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0.9);
+  transition:
+    opacity 50ms ease-in-out,
+    transform 50ms ease-in-out,
+    filter 50ms ease-in-out;
+}
+
+body.is-leaving {
+  opacity: 0.5;
+  transform: scale(0.995); /* 살짝 줄어듦 */
+  filter: blur(0.5px);       /* 아주 약한 블러 */
+}
+
+
+
+
+/* ---- Carousel ---- */
+.carousel {
+  position: relative;
+  max-width: 960px;
+  margin: 24px auto;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 450ms ease;
+  will-change: transform;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  margin: 0;
+}
+
+.carousel-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  background: rgba(0,0,0,0.45);
+  color: #fff;
+  font-size: 28px;
+  line-height: 44px;
+  text-align: center;
+  z-index: 2;
+}
+
+.carousel-btn:hover { background: rgba(0,0,0,0.6); }
+.carousel-btn:active { transform: translateY(-50%) scale(0.98); }
+
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }

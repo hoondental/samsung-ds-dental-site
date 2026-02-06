@@ -15,21 +15,17 @@ enableRobotsTXT = true
     url = "/about/"
     weight = 10
   [[menu.main]]
-    name = "보존치료"
+    name = "보존/일반치료"
     url = "/conservative/"
     weight = 20
   [[menu.main]]
-    name = "보철치료"
+    name = "보철/심미치료"
     url = "/prosthetic/"
     weight = 30
   [[menu.main]]
-    name = "임플란트"
+    name = "임플란트/사랑니"
     url = "/implant/"
     weight = 40
-  [[menu.main]]
-    name = "심미치료"
-    url = "/aesthetic/"
-    weight = 50  
   [[menu.main]]
     name = "수면치료"
     url = "/sleep/"
@@ -44,3 +40,7 @@ enableRobotsTXT = true
     weight = 80
 
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
