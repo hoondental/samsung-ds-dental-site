@@ -1,8 +1,52 @@
 ---
-title: "치과 내부 안내"
+title: "치과 내부"
 summary: "편안한 진료를 위해 공간 하나하나를 신중하게 설계했습니다."
-weight: 15
+weight: 30
 ---
+
+<div class="carousel" data-carousel>
+  <button class="carousel-btn prev" type="button" aria-label="이전 사진">‹</button>
+
+  <div class="carousel-viewport">
+    <div class="carousel-track">
+      <figure class="carousel-slide">
+        <video class="carousel-video"
+               autoplay muted loop playsinline preload="metadata">
+          <source src="/images/about/interior/design1.mp4" type="video/mp4">
+        </video>
+      </figure>
+      <figure class="carousel-slide">
+        <video class="carousel-video"
+               autoplay muted loop playsinline preload="metadata">
+          <source src="/images/about/interior/design2.mp4" type="video/mp4">
+        </video>
+      </figure>
+      <figure class="carousel-slide">
+        <video class="carousel-video"
+               autoplay muted loop playsinline preload="metadata">
+          <source src="/images/about/interior/design3.mp4" type="video/mp4">
+        </video>
+      </figure>
+      <figure class="carousel-slide">
+        <video class="carousel-video"
+               autoplay muted loop playsinline preload="metadata">
+          <source src="/images/about/interior/design4.mp4" type="video/mp4">
+        </video>
+      </figure>
+      <figure class="carousel-slide">
+        <video class="carousel-video"
+               autoplay muted loop playsinline preload="metadata">
+          <source src="/images/about/interior/design5.mp4" type="video/mp4">
+        </video>
+      </figure>
+    </div>
+  </div>
+
+  <button class="carousel-btn next" type="button" aria-label="다음 사진">›</button>
+</div>
+
+
+
 
 ## 진료 공간에 대한 생각
 
@@ -81,28 +125,3 @@ weight: 15
 본원의 진료 환경을 보다 자세히 소개해 드리겠습니다.
 
 
-<div class="carousel" data-carousel>
-  <button class="carousel-btn prev" type="button" aria-label="이전 사진">‹</button>
-
-  <div class="carousel-viewport">
-    <div class="carousel-track">
-      <figure class="carousel-slide">
-        <img src="/images/about/interior/design1.png" alt="치과 인테리어 1" loading="lazy">
-      </figure>
-      <figure class="carousel-slide">
-        <img src="/images/about/interior/design2.png" alt="치과 인테리어 2" loading="lazy">
-      </figure>
-      <figure class="carousel-slide">
-        <img src="/images/about/interior/design3.png" alt="치과 인테리어 3" loading="lazy">
-      </figure>
-      <figure class="carousel-slide">
-        <img src="/images/about/interior/design4.png" alt="치과 인테리어 4" loading="lazy">
-      </figure>
-      <figure class="carousel-slide">
-        <img src="/images/about/interior/design5.png" alt="치과 인테리어 5" loading="lazy">
-      </figure>
-    </div>
-  </div>
-
-  <button class="carousel-btn next" type="button" aria-label="다음 사진">›</button>
-</div>

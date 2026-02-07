@@ -1,8 +1,53 @@
 ---
 title: "진료/디지털 장비"
 summary: "정확한 진단과 안정적인 치료를 위해 검증된 진료 장비를 사용합니다."
-weight: 20
+weight: 40
 ---
+
+<!-- 1번: 글 왼쪽 / 이미지 오른쪽 -->
+<div class="equip-row">
+  <div class="equip-text">
+    <h3>CBCT</h3>
+    <p>정확한 3차원 진단 장비</p>
+  </div>
+  <div class="equip-image">
+    <img src="/images/about/equipments/t2plus.jpg">
+  </div>
+</div>
+
+<!-- 2번: 이미지 왼쪽 / 글 오른쪽 -->
+<div class="equip-row reverse">
+  <div class="equip-text">
+    <h3>TRIOS 5 구강 스캐너</h3>
+    <p>디지털 인상 채득 장비</p>
+  </div>
+  <div class="equip-image">
+    <img src="/images/about/equipments/trios5.jpg">
+  </div>
+</div>
+
+<!-- 3번: 글 왼쪽 / 이미지 오른쪽 -->
+<div class="equip-row">
+  <div class="equip-text">
+    <h3>Cerec PrimeMill 밀링머신</h3>
+    <p>정확한 3차원 진단 장비</p>
+  </div>
+  <div class="equip-image">
+    <img src="/images/about/equipments/primemill.jpg">
+  </div>
+</div>
+
+<!-- 4번: 이미지 왼쪽 / 글 오른쪽 -->
+<div class="equip-row reverse">
+  <div class="equip-text">
+    <h3>SpeedFire</h3>
+    <p>초고속 지르코니아 소결장비</p>
+  </div>
+  <div class="equip-image">
+    <img src="/images/about/equipments/speedfire.jpg">
+  </div>
+</div>
+
 
 ## 정확한 진단과 치료를 위한 장비 선택
 
