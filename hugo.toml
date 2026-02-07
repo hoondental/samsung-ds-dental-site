@@ -27,6 +27,10 @@ enableRobotsTXT = true
     url = "/implant/"
     weight = 40
   [[menu.main]]
+    name = "치주(잇몸)치료"
+    url = "/periodontic/"
+    weight = 50
+  [[menu.main]]
     name = "수면치료"
     url = "/sleep/"
     weight = 60
