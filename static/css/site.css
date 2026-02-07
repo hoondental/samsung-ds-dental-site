@@ -60,6 +60,18 @@ a{text-decoration:none;color:inherit}
   z-index: 2;
 }
 
+.hero {
+  min-height: 60vh;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
 
 /* Sub tabs */
 .subtabs{background:var(--blue);position:relative;z-index:10}

@@ -1,0 +1,37 @@
+{{ define "main" }}
+  {{ $hero := .Params.hero_image | default "/images/hero.jpg" }}
+  <section class="hero" style="background-image:url('{{ $hero }}')">
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+      <div class="hero-kicker">{{ .Params.hero_kicker | default "BARUN IMPLANT DENTAL CLINIC" }}</div>
+      <h1 class="hero-title">{{ .Title }}</h1>
+      {{ with .Params.hero_tagline }}<p class="hero-tagline">{{ . }}</p>{{ end }}
+    </div>
+  </section>
+
+  {{ partial "section-tabs.html" . }}
+
+  <section class="section">
+    <div class="container">
+      {{ if .Params.section_heading }}
+        <h2 class="section-title">{{ .Params.section_heading }}</h2>
+      {{ end }}
+
+      {{ with .Params.features }}
+        <div class="feature-list">
+          {{ range . }}
+            <div class="feature-item">
+              <div class="feature-no">{{ .no }}</div>
+              <div class="feature-text">{{ .text }}</div>
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+
+      <article class="prose">
+        {{ .Content }}
+      </article>
+    </div>
+  </section>
+{{ end }}
+

@@ -1,0 +1,27 @@
+{{ define "main" }}
+  {{ $hero := "/images/implant/implant.jpg" }}
+  <section class="hero" style="background-image:url('{{ $hero }}')">
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+      <div class="hero-kicker">{{ .Site.Params.clinic_name }}</div>
+      <h1 class="hero-title">{{ .Title }}</h1>
+      {{ with .Params.hero_tagline }}<p class="hero-tagline">{{ . }}</p>{{ end }}
+    </div>
+  </section>
+
+  {{ partial "section-tabs.html" . }}
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">{{ .Title }} 목록</h2>
+      <div class="grid">
+        {{ range .Pages.ByWeight }}
+          <a class="card" href="{{ .RelPermalink }}">
+            <div class="card-title">{{ .Title }}</div>
+            {{ with .Summary }}<div class="card-desc">{{ . }}</div>{{ end }}
+          </a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}
