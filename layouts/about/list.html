@@ -13,15 +13,18 @@
 
   <section class="section">
     <div class="container">
-      <h2 class="section-title">{{ .Title }} 목록</h2>
-      <div class="grid">
-        {{ range .Pages.ByWeight }}
-          <a class="card" href="{{ .RelPermalink }}">
-            <div class="card-title">{{ .Title }}</div>
-            {{ with .Summary }}<div class="card-desc">{{ . }}</div>{{ end }}
-          </a>
+
+      <header class="section-header">
+        <h1 class="section-title">{{ .Title }}</h1>
+        {{ with .Params.description }}
+          <p class="section-description">{{ . }}</p>
         {{ end }}
+      </header>
+
+      <div class="content">
+        {{ .Content }}
       </div>
+
     </div>
   </section>
 {{ end }}

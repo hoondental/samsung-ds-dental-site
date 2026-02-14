@@ -71,7 +71,7 @@ a{text-decoration:none;color:inherit}
 .hero1 {
   position: relative;
   overflow: auto;
-  min-height: 50vh; /* 필요하면 70~90vh로 조절 */
+  min-height: 40vh; /* 필요하면 70~90vh로 조절 */
 }
 
 .hero1-video {
@@ -261,6 +261,178 @@ body.is-leaving {
   .equip-row {
     flex-direction: column;
   }
+}
+
+
+/* 사람 소개 좌우 레이아웃 */
+.people-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 60px 0;
+}
+
+.people-text {
+  flex: 1;
+}
+
+.people-image {
+  flex: 1;
+}
+
+.people-image img {
+  width: 100%;
+  border-radius: 16px;
+  display: block;
+}
+
+.people-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.people-image video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 비율 유지하면서 꽉 채움 */
+  border-radius: 12px; /* 원하면 */
+  display: block;
+}
+
+.video-wrap{
+  position: relative;
+}
+
+.video-wrap video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+.mute-btn{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.45);
+  color: white;
+  cursor: pointer;
+}
+
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+  .people-row {
+    flex-direction: column;
+  }
+}
+
+
+
+.img-box {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.img-box img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.img-caption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.img-text-row {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 3rem 0;
+}
+
+.img-text-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.img-text-row .text {
+  flex: 1;
+}
+
+.img-text-row .image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .img-text-row {
+    flex-direction: column;
+  }
+}
+
+
+/* ===== About 카드(치과소개) ===== */
+
+.about-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:16px;
+  margin: 24px 0;
+}
+
+@media (max-width: 860px){
+  .about-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-card{
+  display:block;
+  position:relative;
+  padding: 18px 18px 18px 22px;
+  border-radius:16px;
+  text-decoration:none;
+  border:1px solid #e5e7eb;
+  background:#fff;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.about-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+/* 왼쪽 컬러 바 */
+.about-card::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  width:6px;
+  border-radius:16px 0 0 16px;
+}
+
+.card-blue::before{ background:#3b82f6; }
+.card-green::before{ background:#10b981; }
+.card-purple::before{ background:#8b5cf6; }
+.card-orange::before{ background:#f59e0b; }
+
+.about-card-title{
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 6px;
+  color:#111827;
+}
+
+.about-card-desc{
+  color:#6b7280;
+  line-height: 1.5;
+  font-size: 14.5px;
 }
 
 

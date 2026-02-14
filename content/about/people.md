@@ -3,17 +3,52 @@ title: "의료진 소개"
 summary: "환자의 입장에서 생각하고, 원칙에 기반한 진료를 추구합니다."
 weight: 20
 ---
+<!-- 1번: 글 왼쪽 / 이미지 오른쪽 -->
+<div class="people-row">
+  <div class="people-text">
+    <h3>인사말</h3>
+    <p>안녕하세요. 치과의사 이동훈입니다.
+치과 치료가 조금이라도 덜 불안하고,
+편안한 경험이 될 수 있도록 노력하고 있습니다.
+작은 설명 하나, 작은 배려 하나까지 놓치지 않는 진료로
+늘 함께하겠습니다. 감사합니다.</p>
+  </div>
+  <div class="people-image video-wrap">
+    <video
+      id="introVideo"
+      autoplay
+      loop
+      muted
+      playsinline
+      preload="metadata"
+    >
+      <source src="/images/about/people/이동훈_인사말.mp4파일 교체 필요" type="video/mp4">
+    </video>
+    <button class="mute-btn" type="button" aria-label="Toggle sound" onclick="toggleMute()">🔇</button>
+  </div>
+</div>
 
-## 대표원장 인사말
+## 대표원장 이동훈
+  - 서울대학교 졸업
+  - 서울대학교 치의학대학원 졸업 (DDS)
+  - 서울대학교 석사
+  - 미국 Brown Univ. 석사
+  - 미국 Brown Univ. 박사 수료
 
-안녕하세요.  
-본원의 대표원장입니다.
 
-치과 진료는 단순히 치료를 제공하는 것을 넘어,  
-환자분이 **어떤 과정을 거쳐 치료를 받게 되는지**,  
-그리고 그 과정이 **얼마나 편안하고 안전한지**가 중요하다고 생각합니다.
 
----
+<!-- 2번: 이미지 왼쪽 / 글 오른쪽 -->
+<div class="people-row reverse">
+  <div class="people-text">
+    <h3>TRIOS 5 구강 스캐너</h3>
+    <p>디지털 인상 채득 장비</p>
+  </div>
+  <div class="people-image">
+    <img src="/images/about/equipments/trios5.jpg">
+  </div>
+</div>
+
+
 
 ## 진료를 대하는 생각
 

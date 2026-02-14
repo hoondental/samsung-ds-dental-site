@@ -14,17 +14,14 @@
 </section>
 
 
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">진료 메뉴</h2>
-      <div class="grid">
-        {{ range .Site.Menus.main }}
-          <a class="card" href="{{ .URL }}">
-            <div class="card-title">{{ .Name }}</div>
-            <div class="card-desc">{{ .URL }}</div>
-          </a>
-        {{ end }}
-      </div>
+<!-- 기존 hero/배너는 그대로 두고 -->
+
+<section class="section">
+  <div class="container">
+    <div class="content">
+      {{ .Content }}
     </div>
-  </section>
+  </div>
+</section>
+
 {{ end }}
