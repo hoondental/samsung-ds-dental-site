@@ -436,3 +436,61 @@ body.is-leaving {
 }
 
 
+
+/* 모바일에서 가로 스크롤 없애기 */
+html, body {
+  overflow-x: hidden;
+}
+
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* 카드 그리드: 모바일 1열 */
+.content .about-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+@media (max-width: 860px){
+  .content .about-grid{
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .content a.about-card{
+    padding: 16px 16px 16px 18px;
+    border-radius: 14px;
+  }
+
+  .content .about-card-title{
+    font-size: 17px;
+  }
+
+  .content .about-card-desc{
+    font-size: 14px;
+  }
+}
+
+
+
+/* 모바일 본문 여백 */
+@media (max-width: 860px){
+  .container{
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+
+  .section-title{
+    font-size: 28px !important;
+    line-height: 1.2;
+  }
+
+  .section-description{
+    font-size: 15px;
+    line-height: 1.6;
+  }
+}
