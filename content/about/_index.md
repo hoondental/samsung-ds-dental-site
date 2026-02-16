@@ -8,6 +8,10 @@ description: "서울삼성DS치과의 진료 철학과 의료진, 진료 환경�
 서울삼성DS치과는 **정확한 진단**과 **안전한 치료 과정**,  
 그리고 **환자 입장에서의 편안함**을 가장 중요한 기준으로 생각합니다.
 
+<div style="margin: 0 0 20px; padding:12px 14px; border:1px solid #e5e7eb; border-radius:12px; background:#f9fafb;">
+  개원 전 준비 단계로 일부 정보(대표번호/예약/블로그)는 오픈 예정입니다.
+</div>
+
 <div class="about-grid">
   <a href="/about/philosophy/" class="about-card card-blue">
     <div class="about-card-title">진료 철학</div>
@@ -32,6 +36,11 @@ description: "서울삼성DS치과의 진료 철학과 의료진, 진료 환경�
   <a href="/about/map/" class="about-card card-blue">
     <div class="about-card-title">오시는 길</div>
     <div class="about-card-desc">서울삼성DS치과에 오시는 길을 안내해드립니다.</div>
+  </a>
+
+  <a href="/about/clinic-info/" class="about-card card-green">
+    <div class="about-card-title">진료안내 템플릿</div>
+    <div class="about-card-desc">진료시간·위치·주차·예약 안내 문구를 한 번에 관리합니다.</div>
   </a>
 </div>
 

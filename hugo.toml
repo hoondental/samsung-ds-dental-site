@@ -5,9 +5,11 @@ enableRobotsTXT = true
 
 [params]
   clinic_name = "서울삼성DS치과"
-  phone = "02-0000-0000"
-  naver_booking_url = "https://booking.naver.com/"  # 나중에 실제 예약 링크로 교체
-  naver_blog_url = "https://blog.naver.com/"        # 나중에 실제 블로그로 교체
+  phone = ""
+  site_description = "정확한 진단과 편안한 진료를 제공하는 서울삼성DS치과"
+  og_image = "/images/og-default.jpg"
+  naver_booking_url = ""
+  naver_blog_url = ""
 
 [menu]
   [[menu.main]]

@@ -17,7 +17,7 @@ description: "서울삼성DS치과 위치 및 교통 안내"
 - **도로명 주소:** 경기도 평택시 삼성로 90  
 - **지번 주소:** 경기도 평택시 고덕동 1695  
 - **건물 위치:** 삼성전자 평택캠퍼스 사무3동 4층  
-- **대표전화:** [02-0000-0000](tel:0200000000)
+- **대표전화:** 개통 예정
 
 ---
 
@@ -72,11 +72,11 @@ description: "서울삼성DS치과 위치 및 교통 안내"
 
 원활한 진료를 위해 예약 후 내원을 권장드립니다.
 
-- **전화 예약:** [02-0000-0000](tel:0200000000)  
-- **네이버 예약:** (추후 링크 연결)
+- **전화 예약:** 대표번호 개통 후 안내 예정  
+- **네이버 예약:** 오픈 예정
 
 <div style="margin-top:16px;">
-  <a class="about-card card-purple" href="https://booking.naver.com/" target="_blank" rel="noopener" style="display:inline-block; padding:12px 18px; border-radius:12px;">
-    네이버 예약 바로가기
-  </a>
+  <span class="about-card card-purple" style="display:inline-block; padding:12px 18px; border-radius:12px; opacity:.85;">
+    네이버 예약 오픈 예정
+  </span>
 </div>

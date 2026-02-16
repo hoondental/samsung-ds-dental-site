@@ -1,4 +1,16 @@
-  ## 주요 진료 안내
+---
+title: "정확한 진단, 편안한 진료"
+description: "서울삼성DS치과 메인 페이지"
+draft: false
+hero_tagline: "과잉 진료 없이 필요한 치료만, 치료 후 유지관리까지 책임지는 치과"
+---
+
+<div style="margin: 0 0 22px; padding:14px 16px; border:1px solid #dbeafe; background:#eff6ff; border-radius:12px; color:#1e3a8a;">
+  <strong>개원 준비 중입니다.</strong><br>
+  현재 홈페이지는 사전 안내용이며, 대표번호/네이버예약/블로그는 순차적으로 오픈될 예정입니다.
+</div>
+
+## 주요 진료 안내
 
 <div class="about-grid">
 
@@ -54,11 +66,8 @@
 
 환자분의 입장에서 편안하고 예측 가능한 진료를 제공하는 것을 목표로 합니다.
 
-
 <div style="text-align:center; margin:40px 0;">
-  <a class="about-card card-purple" href="https://booking.naver.com/" 
-     style="display:inline-block; padding:16px 28px; border-radius:14px;">
-    네이버 예약 바로가기
-  </a>
+  <span class="about-card card-purple" style="display:inline-block; padding:16px 28px; border-radius:14px; opacity:.85;">
+    네이버 예약 오픈 예정
+  </span>
 </div>
-
